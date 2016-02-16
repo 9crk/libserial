@@ -1,11 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-//#include"libserial.h"
-extern int UART0_Open(char* port);
-extern void UART0_Close(int fd);
-extern int UART0_Init(int fd, int speed);
-extern int UART0_Recv(int fd, char *rcv_buf,int data_len);
-extern int UART0_Send(int fd, char *send_buf,int data_len);
+#include"libserial.h"
 
 int main(int argc,char* argv[])
 {
